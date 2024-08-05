@@ -51,6 +51,20 @@
   font-weight: 500;
   line-height: normal;
 }
+
+#modal-button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  width: 100%;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  padding: 0;
+}
 .notice-content-date {
   white-space: nowrap;
   color: #707070;
