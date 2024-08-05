@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hyorin.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <script
@@ -123,19 +124,50 @@
             <div class="a-title">갤러리</div>
             <div class="b-notice-content">
               <img class="b-img" src="./assets/images/galbi.png" alt="galbi" />
-              <img class="b-img" src="./assets/images/jabche.png" alt="galbi" />
-              <img class="b-img" src="./assets/images/fish.png" alt="galbi" />
+              <img class="b-img" src="./assets/images/jabche.png" alt="잡채" />
+              <img
+                class="b-img"
+                src="./assets/images/fish.png"
+                alt="생선구이"
+              />
             </div>
           </div>
-          <div class="content c"></div>
+          <div class="content c">
+            <img
+              style="object-fit: contain; width: 90%; height: 90%"
+              src="./assets/images/mat1.jpg"
+              alt="logo"
+            />
+          </div>
         </div>
 
         <!-- 이진 -->
         <div class="footer" name="">
-          <div class="logo"></div>
+          <img src="assets/images/logo_grey.png" alt="logo" class="logo" />
+
           <div class="row-menu">
-            <div class="footer-menu"></div>
-            <div class="copyright"></div>
+            <div class="footer-menu">
+              <a href="dummy.html">
+                <span class="footer-text">남도맛기행축제소개</span>
+              </a>
+
+              <a href="dummy.html">
+                <span class="footer-text">개인정보취급방침</span>
+              </a>
+
+              <a href="dummy.html">
+                <span class="footer-text">이메일무단수집거부</span>
+              </a>
+
+              <a href="dummy.html">
+                <span class="footer-text">제휴문의</span>
+              </a>
+            </div>
+            <div class="copyright">
+              <span class="footer-text"
+                >© 2020 웹디자인기능사 ALL RIGHTS RESERVED.</span
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +176,7 @@
     <style>
       .main {
         width: 1000px;
-        height: 650px;
+        height: 800px;
         display: flex;
         flex-direction: row;
         background-color: black;
@@ -161,30 +193,14 @@
         height: 350px;
         background-color: beige;
       }
-
-      .footer {
-        height: 100px;
-
+      .contents {
+        height: 200px;
+        background-color: brown;
         display: flex;
         flex-direction: row;
       }
-      .logo {
-        background-color: chartreuse;
+      .content {
         flex: 1;
-      }
-      .row-menu {
-        background-color: black;
-        flex: 4;
-        display: flex;
-        flex-direction: column;
-      }
-      .footer-menu {
-        flex: 1;
-        background-color: blue;
-      }
-      .copyright {
-        flex: 1;
-        background-color: wheat;
       }
     </style>
   </body>
