@@ -10,34 +10,39 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 .menu > ul ul {
   display: none;
 }
 
-/* 사이드바의 너비와 높이를 변수를 통해 통제 */
+/* 사이드바의 너비와 높이를 변수로 지정 */
 :root {
   --menu-width: 150px;
-  /* --menu-height: ; */
 }
 
 .menu {
-  position: fixed; /* 스크롤을 따라오도록 지정 */
   background-color: white;
   width: var(--menu-width);
-  min-height: 100vh; /* 사이드바의 높이를 전체 화면 높이의 90%로 지정 */
-  /* 사이드바 위와 아래의 마진을 동일하게 지정 */
 }
 
 /* 모든 메뉴의 a에 속성값 부여 */
 .menu ul > li > a {
-  display: block;
+  display: flex;
   color: black;
   font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
-  /* padding: 20px; */
-  border: 1px solid #555;
+  padding: 20px; /* padding 추가하여 클릭 영역 확대 */
+  border: 1.5px solid #2D6CB3;
+  box-sizing: border-box;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
+
 /* 자식의 position이 absolute일 때 자식을 영역 안에 가두어 준다 */
 .menu > ul > li {
   position: relative;
@@ -45,18 +50,22 @@ a {
 
 /* 모든 메뉴가 마우스 인식 시 반응 */
 .menu ul > li:hover > a {
-  background-color: #555;
-  border-bottom: 1px solid #999;
-  height: 100%;
+  background-color: #C9E0FB;
 }
 
 /* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
 .menu > ul > li:hover > ul {
   display: block;
   position: absolute;
-  background-color: #888;
+  background-color: #2D6CB3;
+  color: white;
   top: 0; /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
   left: 100%; /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
-  width: 100%; /* 1차 메뉴의 너비를 상속 */
+  width: var(--menu-width); /* 사이드바 너비와 동일하게 설정 */
+  z-index: 1; /* 메뉴가 다른 요소 위에 오도록 설정 */
+  border-radius: 5px;
 }
-/* 사이드바 너비의 80%만큼 왼쪽으로 이동 */
+
+.menu-zindex {
+  z-index: 100;
+}
