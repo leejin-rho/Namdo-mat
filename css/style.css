@@ -1,38 +1,127 @@
 /* global colors */
 :root {
-
 }
 
 /* fonts */
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
-    font-weight: 400;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
+  font-weight: 400;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Medium.otf") format("opentype");
-    font-weight: 500;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-SemiBold.otf") format("opentype");
-    font-weight: 600;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-SemiBold.otf") format("opentype");
+  font-weight: 600;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
-    font-weight: 700;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-ExtraBold.otf") format("opentype");
-    font-weight: 800;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-ExtraBold.otf") format("opentype");
+  font-weight: 800;
 }
 
 body {
-    font-family: "Pretendard";
-    font-weight: 400;
-    height: 100%;
-    margin: 0px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  height: 100%;
+  margin: 0px;
+}
+
+/* 효린 */
+.a {
+  width: 200px;
+  background-color: white;
+}
+.a-title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 12px 12px 0px 0px;
+  background: var(--Blue, #2c6bba);
+  display: flex;
+  width: 84px;
+  height: 23px;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.notice-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+.single-notice {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.1px solid #d9d9d9;
+  border-top: none;
+  background: #fff;
+}
+.notice-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 60%;
+  white-space: nowrap;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.notice-content-date {
+  white-space: nowrap;
+  color: #707070;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.b {
+  background-color: white;
+}
+.b-notice-content {
+  background-color: #fff;
+  border-radius: 0 12px 12px 12px;
+  height: 158px;
+  margin: 0 10px 10px 10px;
+  border: 0.1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.b-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+}
+.contents {
+  flex: 1;
+  display: flex;
+  height: 200px;
+  flex-direction: row;
 }
