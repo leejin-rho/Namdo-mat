@@ -1,46 +1,46 @@
 /* global colors */
 :root {
-    --white: #FFFFFF;
-    --black: #141414;
-    --grey: #595F72;
+  --white: #ffffff;
+  --black: #141414;
+  --grey: #595f72;
 }
 
 /* fonts */
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
-    font-weight: 400;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
+  font-weight: 400;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Medium.otf") format("opentype");
-    font-weight: 500;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-SemiBold.otf") format("opentype");
-    font-weight: 600;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-SemiBold.otf") format("opentype");
+  font-weight: 600;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
-    font-weight: 700;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 @font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/Pretendard-ExtraBold.otf") format("opentype");
-    font-weight: 800;
+  font-family: "Pretendard";
+  src: url("../assets/fonts/Pretendard-ExtraBold.otf") format("opentype");
+  font-weight: 800;
 }
 
 body {
-    font-family: "Pretendard";
-    font-weight: 400;
-    height: 100%;
-    margin: 0px;
+  font-family: "Pretendard";
+  font-weight: 400;
+  height: 100%;
+  margin: 0px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
