@@ -1,6 +1,8 @@
 /* global colors */
 :root {
-
+    --white: #FFFFFF;
+    --black: #141414;
+    --grey: #595F72;
 }
 
 /* fonts */
@@ -35,4 +37,8 @@ body {
     font-weight: 400;
     height: 100%;
     margin: 0px;
+}
+
+a {
+    text-decoration: none;
 }
