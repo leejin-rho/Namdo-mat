@@ -42,3 +42,19 @@ body {
 a {
     text-decoration: none;
 }
+
+
+.carousel-inner img {
+    height: 350px;
+    width: auto; /* 이미지의 원본 비율 유지 */
+    max-width: 100%; /* 이미지가 캐러셀 너비를 넘지 않도록 함 */
+    object-fit: contain; /* 이미지를 컨테이너에 맞추면서 비율 유지 */
+}
+.carousel-item {
+    height: 350px;
+    text-align: center; /* 이미지를 수평 중앙 정렬 */
+}
+.carousel-inner {
+    display: flex;
+    align-items: center; /* 이미지를 수직 중앙 정렬 */
+}
